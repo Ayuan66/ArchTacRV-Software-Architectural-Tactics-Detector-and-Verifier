@@ -1,0 +1,17 @@
+EchoXorException() {
+	event ping(){
+		System.out.println("---Ping---");
+	}
+	event echo(){
+		System.out.println("---Echo---");
+	}
+	event exception(){
+		System.out.println("---Exception Happened---");
+	}
+	ltl:  (echo xor exception) => (*)ping
+
+	@violation
+	{
+		System.out.println("ltl violated!");
+	}
+}

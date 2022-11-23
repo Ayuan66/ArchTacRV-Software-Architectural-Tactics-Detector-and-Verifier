@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.5.0'
+}
+
+group 'org.example.plugin'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile files('lib/bcel-6.5.0.jar', 'lib/aspectjweaver-1.9.5.jar')
+    compile fileTree(dir:'lib', include: ['*.jar'])
+    compile 'com.opencsv:opencsv:5.6'
+
+    // https://mvnrepository.com/artifact/com.alibaba/fastjson
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.59'
+
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    plugins 'java'
+    version '2020.2.3'
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}

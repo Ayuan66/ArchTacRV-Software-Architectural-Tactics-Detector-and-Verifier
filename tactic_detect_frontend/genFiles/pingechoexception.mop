@@ -1,0 +1,15 @@
+package mop
+
+import java.io.*
+import java.util.*
+
+PingEchoException() {
+	event exception after() :
+		call(* server_exception(..))
+			{ System.out.println("---Exception Happend---"); }
+	event handleexception after() :
+		call(* handle_exception(..))
+			{ System.out.println("---Exception Handled---"); }
+  ltl: [](handleexception => (*)exception)
+  @violation{ System.out.println("ltl violated!"); }
+}

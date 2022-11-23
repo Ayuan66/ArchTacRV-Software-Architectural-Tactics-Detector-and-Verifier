@@ -1,0 +1,18 @@
+package mop
+
+import java.io.*
+import java.util.*
+
+ExceptionTime() {
+	event ping before() :
+		call(* send_ping(..))
+			{ System.out.println("---Ping---"); }
+	event echo before() :
+		call(* send_echo(..))
+			{ System.out.println("---Echo---"); }
+	event exception after() :
+		call(* server_exception(..))
+			{ System.out.println("---Exception Happend---"); }
+  ltl: [](exception => (not echo S ping))
+  @violation{ System.out.println("ltl violated!"); }
+}

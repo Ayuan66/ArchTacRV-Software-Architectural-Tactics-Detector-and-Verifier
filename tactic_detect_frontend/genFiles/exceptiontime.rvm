@@ -1,0 +1,14 @@
+ExceptionTime() {
+	event ping(){
+	}
+	event echo(){
+	}
+	event exception(){
+	}
+	ltl:  [](exception => (not echo S ping))
+
+	@violation
+	{
+		System.out.println("ltl violated!");
+	}
+}

@@ -1,0 +1,13 @@
+PingEchoException() {
+	event exception(){
+	}
+	event handleexception(){
+		System.out.println("---Exception Handled---");
+	}
+	ltl:  [](handleexception => (*)exception)
+
+	@violation
+	{
+		System.out.println("ltl violated!");
+	}
+}

@@ -1,0 +1,14 @@
+PingEcho() {
+	event ping(){
+	}
+	event echo(){
+	}
+	event exception(){
+	}
+	ltl:  [](echo => (*)ping)
+
+	@violation
+	{
+		System.out.println("ltl violated!");
+	}
+}

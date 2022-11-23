@@ -1,0 +1,18 @@
+package mop
+
+import java.io.*
+import java.util.*
+
+EchoXorException() {
+	event ping before() :
+		call(* send_ping(..))
+			{ System.out.println("---Ping---"); }
+	event echo before() :
+		call(* send_echo(..))
+			{ System.out.println("---Echo---"); }
+	event exception after() :
+		call(* server_exception(..))
+			{ System.out.println("---Exception Happend---"); }
+  ltl: (echo xor exception) => (*)ping
+  @violation{ System.out.println("ltl violated!"); }
+}
