@@ -1,0 +1,290 @@
+///////////// A request at 09/08/2020 07:31:21 /////////////
+//// Result Status
+Success
+//// Execution Time
+203ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>m2 =&gt; (*) m1</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>m2 =&gt; (*) m1</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+m2 -&gt; violation
+m1 -&gt; s1
+default s1]
+
+violation[
+]
+
+s1[
+m2 -&gt; s1
+m1 -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+m2 -&gt; violation
+m1 -&gt; s1
+default s1]
+
+violation[
+]
+
+s1[
+m2 -&gt; s1
+m1 -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  m2 -&gt; violation
+  m1 -&gt; s1
+]
+violation[
+
+]
+s1[
+  default s1
+  m2 -&gt; s1
+  m1 -&gt; s1
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> m2</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{m2=[[]], m1=[]}
+// violation Coenables
+{m2=[], m1=[]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  m2 -&gt; violation
+  m1 -&gt; s1
+]
+violation[
+
+]
+s1[
+  default s1
+  m2 -&gt; s1
+  m1 -&gt; s1
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> m2</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{m2=[[]], m1=[]}
+// violation Coenables
+{m2=[], m1=[]}
+</EnableSets>
+</mop>
+
+///////////// A request at 09/08/2020 07:31:41 /////////////
+//// Result Status
+Success
+//// Execution Time
+205ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>m2 =&gt; (*) m1</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>m2 =&gt; (*) m1</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+m2 -&gt; violation
+m1 -&gt; s1
+default s1]
+
+violation[
+]
+
+s1[
+m2 -&gt; s1
+m1 -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+m2 -&gt; violation
+m1 -&gt; s1
+default s1]
+
+violation[
+]
+
+s1[
+m2 -&gt; s1
+m1 -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  m2 -&gt; violation
+  m1 -&gt; s1
+]
+violation[
+
+]
+s1[
+  default s1
+  m2 -&gt; s1
+  m1 -&gt; s1
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> m2</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{m2=[[]], m1=[]}
+// violation Coenables
+{m2=[], m1=[]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  m2 -&gt; violation
+  m1 -&gt; s1
+]
+violation[
+
+]
+s1[
+  default s1
+  m2 -&gt; s1
+  m1 -&gt; s1
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> m2</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{m2=[[]], m1=[]}
+// violation Coenables
+{m2=[], m1=[]}
+</EnableSets>
+</mop>
+

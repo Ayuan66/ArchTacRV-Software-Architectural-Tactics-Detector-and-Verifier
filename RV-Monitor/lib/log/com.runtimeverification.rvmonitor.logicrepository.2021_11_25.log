@@ -1,0 +1,3190 @@
+///////////// A request at 11/25/2021 01:29:05 /////////////
+//// Result Status
+Success
+//// Execution Time
+226ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:29:06 /////////////
+//// Result Status
+Success
+//// Execution Time
+221ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:29:06 /////////////
+//// Result Status
+Success
+//// Execution Time
+221ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:29:07 /////////////
+//// Result Status
+Success
+//// Execution Time
+240ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:41:51 /////////////
+//// Result Status
+Success
+//// Execution Time
+250ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:41:52 /////////////
+//// Result Status
+Success
+//// Execution Time
+216ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:41:52 /////////////
+//// Result Status
+Success
+//// Execution Time
+219ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:41:52 /////////////
+//// Result Status
+Success
+//// Execution Time
+234ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:43:51 /////////////
+//// Result Status
+Success
+//// Execution Time
+448ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:43:52 /////////////
+//// Result Status
+Success
+//// Execution Time
+236ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:43:52 /////////////
+//// Result Status
+Success
+//// Execution Time
+238ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 01:43:52 /////////////
+//// Result Status
+Success
+//// Execution Time
+291ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 02:35:24 /////////////
+//// Result Status
+Success
+//// Execution Time
+257ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 02:35:25 /////////////
+//// Result Status
+Success
+//// Execution Time
+243ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 02:35:25 /////////////
+//// Result Status
+Success
+//// Execution Time
+237ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 02:35:25 /////////////
+//// Result Status
+Success
+//// Execution Time
+252ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 02:37:36 /////////////
+//// Result Status
+Success
+//// Execution Time
+251ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](echo =&gt; (*)ping)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; violation
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s2
+echo -&gt; s2
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  echo -&gt; violation
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+s1[
+  default s2_s0
+  echo -&gt; s2_s0
+  ping -&gt; s1
+  exception -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> echo ping exception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{echo=[[], [echo, ping], [exception, ping], [ping], [echo, exception, ping], [exception]], ping=[[], [echo, ping], [exception, ping], [echo, exception, ping], [ping], [exception]], exception=[[], [echo, ping], [exception, ping], [echo, ping, exception], [ping], [exception]]}
+// violation Coenables
+{echo=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], ping=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]], exception=[[echo], [echo, ping], [echo, ping, exception], [echo, exception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 02:37:37 /////////////
+//// Result Status
+Success
+//// Execution Time
+375ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](handleexception =&gt; (*)exception)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+
+violation[
+]
+
+s1[
+exception -&gt; s1
+handleexception -&gt; s2
+default s2]
+
+s2[
+exception -&gt; s1
+handleexception -&gt; violation
+default s2]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>exception handleexception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s2[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; violation
+]
+violation[
+
+]
+s1[
+  default s0_s2
+  exception -&gt; s1
+  handleexception -&gt; s0_s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception handleexception</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [exception], [exception, handleexception]], handleexception=[[], [exception], [exception, handleexception]]}
+// violation Coenables
+{exception=[[exception, handleexception], [handleexception]], handleexception=[[exception, handleexception], [handleexception]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 02:37:38 /////////////
+//// Result Status
+Success
+//// Execution Time
+249ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>(echo xor exception) =&gt; (*)ping</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  exception -&gt; violation
+  echo -&gt; violation
+  ping -&gt; s1
+]
+s1[
+  default s1
+  exception -&gt; s1
+  echo -&gt; s1
+  ping -&gt; s1
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[]], echo=[[]], ping=[]}
+// violation Coenables
+{exception=[], echo=[], ping=[]}
+</EnableSets>
+</mop>
+
+///////////// A request at 11/25/2021 02:37:38 /////////////
+//// Result Status
+Success
+//// Execution Time
+282ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](exception =&gt; (not echo S ping))</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+violation[
+]
+
+s2[
+ping -&gt; s1
+exception -&gt; violation
+echo -&gt; s2
+default s2]
+
+s1[
+ping -&gt; s1
+exception -&gt; s1
+echo -&gt; s2
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>ping echo exception</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s2_s0[
+  default s2_s0
+  exception -&gt; violation
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+s1[
+  default s1
+  exception -&gt; s1
+  ping -&gt; s1
+  echo -&gt; s2_s0
+]
+violation[
+
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> exception ping echo</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{exception=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], ping=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]], echo=[[], [ping, echo, exception], [ping, exception], [ping], [echo], [ping, echo]]}
+// violation Coenables
+{exception=[[exception, echo], [exception, echo, ping]], ping=[[exception, echo], [exception, echo, ping]], echo=[[exception, echo], [exception, echo, ping], [exception]]}
+</EnableSets>
+</mop>
+

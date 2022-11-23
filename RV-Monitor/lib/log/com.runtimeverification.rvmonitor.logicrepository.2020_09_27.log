@@ -1,0 +1,495 @@
+///////////// A request at 09/27/2020 12:55:32 /////////////
+//// Result Status
+Success
+//// Execution Time
+190ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>m2 =&gt; m1</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>m2 =&gt; m1</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+m2 -&gt; violation
+m1 -&gt; s1
+default s1]
+
+violation[
+]
+
+s1[
+m2 -&gt; s1
+m1 -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+m2 -&gt; violation
+m1 -&gt; s1
+default s1]
+
+violation[
+]
+
+s1[
+m2 -&gt; s1
+m1 -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  m2 -&gt; violation
+  m1 -&gt; s1
+]
+violation[
+
+]
+s1[
+  default s1
+  m2 -&gt; s1
+  m1 -&gt; s1
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> m2</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{m2=[[]], m1=[]}
+// violation Coenables
+{m2=[], m1=[]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>m1 m2</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+  default s1
+  m2 -&gt; violation
+  m1 -&gt; s1
+]
+violation[
+
+]
+s1[
+  default s1
+  m2 -&gt; s1
+  m1 -&gt; s1
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> m2</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{m2=[[]], m1=[]}
+// violation Coenables
+{m2=[], m1=[]}
+</EnableSets>
+</mop>
+
+///////////// A request at 09/27/2020 12:59:28 /////////////
+//// Result Status
+Success
+//// Execution Time
+208ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](assignPriority =&gt; (*)request)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](assignPriority =&gt; (*)request)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; violation
+default s1]
+
+s2[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; violation
+default s1]
+
+s2[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s1[
+  default s0_s1
+  enqueue -&gt; s0_s1
+  getResource -&gt; s0_s1
+  assignPriority -&gt; violation
+  request -&gt; s2
+]
+violation[
+
+]
+s2[
+  default s0_s1
+  enqueue -&gt; s0_s1
+  getResource -&gt; s0_s1
+  assignPriority -&gt; s0_s1
+  request -&gt; s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> enqueue getResource assignPriority request</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{enqueue=[[], [enqueue, request], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], getResource=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], assignPriority=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], request=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]]}
+// violation Coenables
+{enqueue=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], getResource=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], assignPriority=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], request=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s1[
+  default s0_s1
+  enqueue -&gt; s0_s1
+  getResource -&gt; s0_s1
+  assignPriority -&gt; violation
+  request -&gt; s2
+]
+violation[
+
+]
+s2[
+  default s0_s1
+  enqueue -&gt; s0_s1
+  getResource -&gt; s0_s1
+  assignPriority -&gt; s0_s1
+  request -&gt; s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> enqueue getResource assignPriority request</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{enqueue=[[], [enqueue, request], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], getResource=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], assignPriority=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], request=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]]}
+// violation Coenables
+{enqueue=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], getResource=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], assignPriority=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], request=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]]}
+</EnableSets>
+</mop>
+
+///////////// A request at 09/27/2020 01:36:45 /////////////
+//// Result Status
+Success
+//// Execution Time
+209ms
+//// Client Name
+RVMonitor
+//// Logic Name
+ltl
+//// Logic Repository Input
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](assignPriority =&gt; (*)request)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Input to ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>ltl</Logic>
+        <Formula>[](assignPriority =&gt; (*)request)</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 1. Logic Plugin Output from ltl
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; violation
+default s1]
+
+s2[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Input to fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; violation
+default s1]
+
+violation[
+]
+
+s1[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; violation
+default s1]
+
+s2[
+getResource -&gt; s1
+enqueue -&gt; s1
+request -&gt; s2
+assignPriority -&gt; s1
+default s1]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+</mop>
+
+//// 2. Logic Plugin Output from fsm
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s1[
+  default s0_s1
+  enqueue -&gt; s0_s1
+  getResource -&gt; s0_s1
+  assignPriority -&gt; violation
+  request -&gt; s2
+]
+violation[
+
+]
+s2[
+  default s0_s1
+  enqueue -&gt; s0_s1
+  getResource -&gt; s0_s1
+  assignPriority -&gt; s0_s1
+  request -&gt; s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> enqueue getResource assignPriority request</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{enqueue=[[], [enqueue, request], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], getResource=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], assignPriority=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], request=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]]}
+// violation Coenables
+{enqueue=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], getResource=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], assignPriority=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], request=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]]}
+</EnableSets>
+</mop>
+
+//// Logic Repository Output
+
+<mop>
+    <Client>RVMonitor</Client>
+    <Events>assignPriority request enqueue getResource</Events>
+    <Property>
+        <Logic>fsm</Logic>
+        <Formula>s0_s1[
+  default s0_s1
+  enqueue -&gt; s0_s1
+  getResource -&gt; s0_s1
+  assignPriority -&gt; violation
+  request -&gt; s2
+]
+violation[
+
+]
+s2[
+  default s0_s1
+  enqueue -&gt; s0_s1
+  getResource -&gt; s0_s1
+  assignPriority -&gt; s0_s1
+  request -&gt; s2
+]
+</Formula>
+    </Property>
+    <Categories>violation</Categories>
+    <CreationEvents> enqueue getResource assignPriority request</CreationEvents>
+    <Message>done</Message>
+    <EnableSets>// violation Enables
+{enqueue=[[], [enqueue, request], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], getResource=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], assignPriority=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]], request=[[enqueue, request], [], [getResource, assignPriority, request], [enqueue], [getResource, enqueue], [getResource, assignPriority, enqueue, request], [getResource, enqueue, request], [getResource], [getResource, request], [assignPriority, request], [assignPriority, enqueue, request], [request]]}
+// violation Coenables
+{enqueue=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], getResource=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], assignPriority=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]], request=[[getResource, assignPriority, request], [enqueue, getResource, assignPriority, request], [enqueue, getResource, assignPriority], [assignPriority], [assignPriority, request], [getResource, assignPriority], [enqueue, assignPriority, request], [enqueue, assignPriority]]}
+</EnableSets>
+</mop>
+
