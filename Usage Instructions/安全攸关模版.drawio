@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2023-12-07T03:24:25.337Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="x1DKjifb9kO1xoQ1JbRN" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-07T03:56:06.029Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="0vlOPMt3YxHe1tlQUU5f" version="22.1.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="757" dy="583" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="anvmD5nSPNhNmB6iQBok-108" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1325" y="503" width="352" height="136" as="geometry" />
+        </mxCell>
         <mxCell id="anvmD5nSPNhNmB6iQBok-101" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1585" y="1132" width="127" height="113" as="geometry" />
         </mxCell>
@@ -350,6 +353,24 @@
         </mxCell>
         <mxCell id="anvmD5nSPNhNmB6iQBok-107" value="本软件输出物" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1629" y="1216" width="90" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="anvmD5nSPNhNmB6iQBok-109" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;领域软件算法流程建模与验证工具&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1378" y="509" width="258" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="anvmD5nSPNhNmB6iQBok-110" value="领域软件&lt;br&gt;算法流程建模模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1345" y="561" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="anvmD5nSPNhNmB6iQBok-111" value="操作系统通信信息&lt;br&gt;配置模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1543" y="561" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="anvmD5nSPNhNmB6iQBok-114" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="anvmD5nSPNhNmB6iQBok-110" target="anvmD5nSPNhNmB6iQBok-111">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1360" y="556" as="sourcePoint" />
+            <mxPoint x="1410" y="506" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="anvmD5nSPNhNmB6iQBok-115" value="I/F-CS-1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1469.5" y="569" width="63" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
