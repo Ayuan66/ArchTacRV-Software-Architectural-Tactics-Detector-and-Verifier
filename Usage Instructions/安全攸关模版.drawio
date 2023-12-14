@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-14T14:57:18.734Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="NtX9Lc4UhkzX4gXX6b5k" version="22.1.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-12-14T16:33:55.872Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="PmzEboWeotgm9TfvL-G9" version="22.1.8" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="随意花花">
     <mxGraphModel dx="1594" dy="905" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -1418,7 +1418,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="SOvfcBZJZrv51FIMrvHL" name="进程需求">
-    <mxGraphModel dx="911" dy="517" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1594" dy="905" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1569,6 +1569,27 @@
         </mxCell>
         <mxCell id="5UDI3ysS-kXcN444QLgk-33" value="模型一致性检查" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="633" y="1008.0033740234376" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5UDI3ysS-kXcN444QLgk-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5UDI3ysS-kXcN444QLgk-34" target="5UDI3ysS-kXcN444QLgk-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5UDI3ysS-kXcN444QLgk-34" value="读取架构模型" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="526" y="39" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5UDI3ysS-kXcN444QLgk-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5UDI3ysS-kXcN444QLgk-35" target="5UDI3ysS-kXcN444QLgk-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5UDI3ysS-kXcN444QLgk-35" value="遍历所有模块" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="699" y="39" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5UDI3ysS-kXcN444QLgk-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5UDI3ysS-kXcN444QLgk-36" target="5UDI3ysS-kXcN444QLgk-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5UDI3ysS-kXcN444QLgk-36" value="按进程所属组信息&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;组合模块" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="872" y="39" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5UDI3ysS-kXcN444QLgk-37" value="生成算法流程模型" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1045" y="39" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
