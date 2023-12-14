@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-14T05:54:37.472Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="MDK37SJQ-kNi_5L5QJF2" version="22.1.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-12-14T07:05:26.658Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="siWi0_SspzhbVhL-rqt9" version="22.1.8" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1594" dy="903" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -883,17 +883,125 @@
         <mxCell id="0lefj2nV2H19HltZ1ufd-12" value="&lt;b&gt;保存至功能函数表&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1153.9966259765624" y="127" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-16" target="0lefj2nV2H19HltZ1ufd-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-16" target="0lefj2nV2H19HltZ1ufd-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-16" target="0lefj2nV2H19HltZ1ufd-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="0lefj2nV2H19HltZ1ufd-16" value="&lt;b&gt;新建模块&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="724.9966259765625" y="444" width="120" height="60" as="geometry" />
+          <mxGeometry x="719.9966259765625" y="504" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-17" target="0lefj2nV2H19HltZ1ufd-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-17" target="0lefj2nV2H19HltZ1ufd-22">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="0lefj2nV2H19HltZ1ufd-17" value="&lt;b&gt;导入功能函数&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="911.9966259765625" y="384" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-19" target="0lefj2nV2H19HltZ1ufd-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="0lefj2nV2H19HltZ1ufd-19" value="&lt;b&gt;新建模块端口&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="911.9966259765625" y="504" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-20" target="0lefj2nV2H19HltZ1ufd-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-20" target="0lefj2nV2H19HltZ1ufd-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-20" target="0lefj2nV2H19HltZ1ufd-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="0lefj2nV2H19HltZ1ufd-20" value="&lt;b&gt;新建端口间连接线&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="911.9966259765625" y="624" width="120" height="60" as="geometry" />
+          <mxGeometry x="911.9966259765625" y="664" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-21" target="0lefj2nV2H19HltZ1ufd-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-21" value="&lt;b&gt;修改功能函数属性&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1099.0033740234376" y="341" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-22" target="0lefj2nV2H19HltZ1ufd-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-22" value="&lt;b&gt;修改功能函数端口&lt;br&gt;属性&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1099.0033740234376" y="424" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-23" target="0lefj2nV2H19HltZ1ufd-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-23" value="&lt;b&gt;修改模块端口属性&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1099.0033740234376" y="504" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-24" target="0lefj2nV2H19HltZ1ufd-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-24" value="&lt;b&gt;新建功能函数锻端口-模块端口连接线&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1099.0033740234376" y="584" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-25" target="0lefj2nV2H19HltZ1ufd-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-25" value="&lt;b&gt;新建功能函数端口-功能函数端口连接线&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1099.0033740234376" y="664" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-26" target="0lefj2nV2H19HltZ1ufd-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-26" value="&lt;b&gt;新建模块端口-&lt;br&gt;功能函数端口连接线&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1099.0033740234376" y="744" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-36" value="&lt;b&gt;保存至模块库&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1303.0033740234376" y="505" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-44" value="架构模型" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="351" y="659" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-45" target="0lefj2nV2H19HltZ1ufd-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-45" target="0lefj2nV2H19HltZ1ufd-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-45" target="0lefj2nV2H19HltZ1ufd-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-45" value="&lt;b&gt;新建架构模型&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1542.003251953125" y="281" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-46" target="0lefj2nV2H19HltZ1ufd-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-46" target="0lefj2nV2H19HltZ1ufd-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0lefj2nV2H19HltZ1ufd-46" target="0lefj2nV2H19HltZ1ufd-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-46" value="&lt;b&gt;导入模块&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1707.003251953125" y="166" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-47" value="&lt;b&gt;修改功能函数属性&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1872.003251953125" y="72" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-48" value="&lt;b&gt;修改模块属性&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1872.003251953125" y="166" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-49" value="&lt;b&gt;建立端口间连接线&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1872.003251953125" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-50" value="&lt;b&gt;编辑进程所属组&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1707.003251953125" y="281" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0lefj2nV2H19HltZ1ufd-51" value="&lt;b&gt;建立需求追踪关系&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1707.003251953125" y="392" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
