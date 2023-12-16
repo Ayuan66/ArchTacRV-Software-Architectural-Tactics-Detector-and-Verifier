@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-16T07:44:54.906Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="nLijCy6kly2RzOAqfVXR" version="22.1.9" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-12-16T08:05:29.713Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="caDgKQaLwkwHDid4n_Z0" version="22.1.9" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="随意花花">
     <mxGraphModel dx="1154" dy="851" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -710,7 +710,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Wtqtqdz22U3csw6JUSIO" name="架构需求">
-    <mxGraphModel dx="962" dy="709" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1154" dy="851" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1055,7 +1055,7 @@
         <mxCell id="5pkxsV-xId3uebJNOMu3-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5pkxsV-xId3uebJNOMu3-12" target="5pkxsV-xId3uebJNOMu3-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5pkxsV-xId3uebJNOMu3-32" value="检查通过" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5pkxsV-xId3uebJNOMu3-21" vertex="1" connectable="0">
+        <mxCell id="5pkxsV-xId3uebJNOMu3-32" value="检查通过" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" parent="5pkxsV-xId3uebJNOMu3-21" vertex="1" connectable="0">
           <mxGeometry x="-0.2222" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -1679,14 +1679,26 @@
         <mxCell id="Z-eYUjoVaMpjOUNKpEok-70" value="模块是否存在子模块" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="2440" y="848" width="80" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="Z-eYUjoVaMpjOUNKpEok-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Z-eYUjoVaMpjOUNKpEok-72" target="Z-eYUjoVaMpjOUNKpEok-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Z-eYUjoVaMpjOUNKpEok-72" value="遍历模块下功能函数" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="2420.001043294271" y="967.997811686198" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z-eYUjoVaMpjOUNKpEok-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Z-eYUjoVaMpjOUNKpEok-73" target="Z-eYUjoVaMpjOUNKpEok-74">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Z-eYUjoVaMpjOUNKpEok-73" value="将功能函数转换为&lt;br&gt;AADL代码" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="2419.9977099609373" y="1068.0044783528647" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="Z-eYUjoVaMpjOUNKpEok-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Z-eYUjoVaMpjOUNKpEok-74" target="Z-eYUjoVaMpjOUNKpEok-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Z-eYUjoVaMpjOUNKpEok-74" value="将模块转换为AADL&lt;br&gt;代码" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="2419.9977099609373" y="1168.0044783528647" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z-eYUjoVaMpjOUNKpEok-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Z-eYUjoVaMpjOUNKpEok-75" target="Z-eYUjoVaMpjOUNKpEok-76">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Z-eYUjoVaMpjOUNKpEok-75" value="将架构转换为AADL&lt;br&gt;代码" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="2419.9943766276047" y="1268.0044783528647" width="120" height="60" as="geometry" />
