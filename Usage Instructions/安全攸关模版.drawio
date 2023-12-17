@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-17T06:59:37.028Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="rtEhiu2O7I8vNlu52szt" version="22.1.11" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-12-17T07:31:38.323Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="7fGLWFz8zRssKRmaL-KK" version="22.1.11" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="随意花花">
     <mxGraphModel dx="1156" dy="852" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -2568,10 +2568,13 @@
     </mxGraphModel>
   </diagram>
   <diagram id="SOvfcBZJZrv51FIMrvHL" name="进程需求">
-    <mxGraphModel dx="1154" dy="851" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="746" dy="550" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-12" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="824" y="534" width="379" height="105" as="geometry" />
+        </mxCell>
         <mxCell id="B2Y-cJKqREiRbmtxEooU-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" parent="1" source="B2Y-cJKqREiRbmtxEooU-1" target="B2Y-cJKqREiRbmtxEooU-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -2936,6 +2939,56 @@
         </mxCell>
         <mxCell id="LLB6j6JlwxREYtrgnltj-45" value="输出相应错误信息" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="486.01" y="1721" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zXQMVR4ZxA2V7TWw5agT-1" target="zXQMVR4ZxA2V7TWw5agT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-6" value="架构模型" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" vertex="1" connectable="0" parent="zXQMVR4ZxA2V7TWw5agT-4">
+          <mxGeometry x="0.268" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-1" value="&lt;b&gt;领域软件架构&lt;br&gt;设计建模与验证工具&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="992" y="457.0033740234376" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zXQMVR4ZxA2V7TWw5agT-2" target="zXQMVR4ZxA2V7TWw5agT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-7" value="算法流程模型" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" vertex="1" connectable="0" parent="zXQMVR4ZxA2V7TWw5agT-5">
+          <mxGeometry x="-0.05" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-2" value="算法流程模型自动生成" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="912" y="549" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zXQMVR4ZxA2V7TWw5agT-3" target="zXQMVR4ZxA2V7TWw5agT-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-11" value="算法流程模型" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" vertex="1" connectable="0" parent="zXQMVR4ZxA2V7TWw5agT-10">
+          <mxGeometry x="-0.2469" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QyrKlEVudXkoh5uM1cR7-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zXQMVR4ZxA2V7TWw5agT-3" target="QyrKlEVudXkoh5uM1cR7-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QyrKlEVudXkoh5uM1cR7-4" value="XML文件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" vertex="1" connectable="0" parent="QyrKlEVudXkoh5uM1cR7-2">
+          <mxGeometry x="-0.0336" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-3" value="操作系统通信配置" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1112" y="549" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-9" value="算法模型管理" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="992" y="657" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQMVR4ZxA2V7TWw5agT-13" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;算法流程建模&lt;br&gt;（CSC1）&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="819" y="529.5" width="114" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QyrKlEVudXkoh5uM1cR7-1" value="文件系统" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1265" y="569.5" width="70" height="39" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
