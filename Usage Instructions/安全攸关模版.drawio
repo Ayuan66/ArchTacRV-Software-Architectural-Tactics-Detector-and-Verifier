@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-17T06:45:12.596Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="8LoLL7U270ZS0bWrQk7w" version="22.1.11" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-12-17T06:59:37.028Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="rtEhiu2O7I8vNlu52szt" version="22.1.11" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="随意花花">
     <mxGraphModel dx="1156" dy="852" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -2527,6 +2527,42 @@
         </mxCell>
         <mxCell id="YsTt8cRmddQYgeuB5M7c-241" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;需求追踪&lt;br&gt;（CSC4）&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="2035" y="2477.5" width="93" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-250" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YsTt8cRmddQYgeuB5M7c-242" target="YsTt8cRmddQYgeuB5M7c-245">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YsTt8cRmddQYgeuB5M7c-242" target="YsTt8cRmddQYgeuB5M7c-243">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-242" value="开始" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2282" y="2697" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-252" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YsTt8cRmddQYgeuB5M7c-243" target="YsTt8cRmddQYgeuB5M7c-244">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-243" value="获取需求模型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2202" y="2805" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-248" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YsTt8cRmddQYgeuB5M7c-244" target="YsTt8cRmddQYgeuB5M7c-246">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-244" value="处理需求模型" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2201.9987917564654" y="2910.9955199353453" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YsTt8cRmddQYgeuB5M7c-245" target="YsTt8cRmddQYgeuB5M7c-246">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-245" value="获取架构模型" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2359.997757273707" y="2855.0020716594827" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YsTt8cRmddQYgeuB5M7c-246" target="YsTt8cRmddQYgeuB5M7c-247">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-246" value="绑定需求追踪关系" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2285.002584859914" y="3012.995864762931" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YsTt8cRmddQYgeuB5M7c-247" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2285" y="3101" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
