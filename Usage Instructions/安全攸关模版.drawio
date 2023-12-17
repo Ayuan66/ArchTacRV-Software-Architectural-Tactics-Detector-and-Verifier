@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-17T12:09:48.174Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="7H37CtrW95rxzdRHvVwB" version="22.1.11" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-12-17T12:22:07.888Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="W_o31r5k8mYHG-Z3Sjt3" version="22.1.11" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="随意花花">
     <mxGraphModel dx="1156" dy="852" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -2573,7 +2573,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="dR5NVdEEcQmpU1F8V2J7-32" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="2198" y="810" width="226" height="182" as="geometry" />
+          <mxGeometry x="2253" y="810" width="125" height="182" as="geometry" />
         </mxCell>
         <mxCell id="zXQMVR4ZxA2V7TWw5agT-12" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="824" y="534" width="379" height="105" as="geometry" />
@@ -3299,6 +3299,27 @@
         </mxCell>
         <mxCell id="dR5NVdEEcQmpU1F8V2J7-33" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;需求追踪&lt;br&gt;（CSC4）&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="2268" y="942" width="93" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dR5NVdEEcQmpU1F8V2J7-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=1" edge="1" parent="1" source="dR5NVdEEcQmpU1F8V2J7-35" target="dR5NVdEEcQmpU1F8V2J7-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dR5NVdEEcQmpU1F8V2J7-35" value="开始" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1912" y="946" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dR5NVdEEcQmpU1F8V2J7-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=1" edge="1" parent="1" source="dR5NVdEEcQmpU1F8V2J7-36" target="dR5NVdEEcQmpU1F8V2J7-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dR5NVdEEcQmpU1F8V2J7-36" value="读取需求追踪关系" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1912.0032772090517" y="1046.9970676185346" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dR5NVdEEcQmpU1F8V2J7-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=1" edge="1" parent="1" source="dR5NVdEEcQmpU1F8V2J7-37" target="dR5NVdEEcQmpU1F8V2J7-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dR5NVdEEcQmpU1F8V2J7-37" value="展示需求追踪关系" style="whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1912.001897898707" y="1147.9962937769399" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dR5NVdEEcQmpU1F8V2J7-40" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1912" y="1249" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
