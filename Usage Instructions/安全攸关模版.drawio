@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-25T16:33:21.369Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="fOP8DCwLw1r2h3aIGbDV" version="24.3.0" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-04-27T14:25:10.879Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="Gl-6Tm7fFqaZycMOk9fm" version="24.3.0" type="github" pages="6">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="随意花花">
     <mxGraphModel dx="1837" dy="822" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -3778,7 +3778,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jou_mNN_POa7vfLazRrP" name="数据库">
-    <mxGraphModel dx="920" dy="564" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1640" dy="881" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5504,11 +5504,29 @@
             <mxRectangle width="150" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="P2spWwJrUt0UoIqz96GC-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="75" width="759" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="P2spWwJrUt0UoIqz96GC-3" value="RA: Safety Critical Software Architecture Modeling Method" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="843" y="114" width="328" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P2spWwJrUt0UoIqz96GC-4" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="859" y="142" width="305" height="305" as="geometry" />
+        </mxCell>
+        <mxCell id="P2spWwJrUt0UoIqz96GC-5" value="Problem:&lt;div&gt;How to model software architecture&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="904" y="165" width="206" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="P2spWwJrUt0UoIqz96GC-6" value="Gap:&lt;div&gt;Knowledge,&lt;/div&gt;&lt;div&gt;Modeling method&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="867" y="227" width="121" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="P2spWwJrUt0UoIqz96GC-7" value="Method:&lt;div&gt;Intelligent modeling&lt;/div&gt;&lt;div&gt;+&lt;/div&gt;&lt;div&gt;Area Knowledge&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1029" y="227" width="121" height="121" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="i4VbNNoO-v39SWw2RZhP" name="冯如杯">
-    <mxGraphModel dx="1837" dy="822" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1640" dy="881" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
